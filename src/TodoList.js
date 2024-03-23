@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NewTodoForm from "./NewTodoForm";
 import Todo from "./Todo";
 
 const TodoList = () => {
@@ -12,12 +13,17 @@ const TodoList = () => {
     }
     return (
         <div>
-            <h3>Todo List</h3>
-            <ul>
-                {todoList.map((todo, index) => (
-                    <Todo key={index} todo={todo} deleteTodo={deleteTodo}/>
-                ))}
-            </ul>
+            <h3>New Todo Form</h3>
+            <NewTodoForm />
+            <hr></hr>
+            <div>
+                <h3>Todo List</h3>
+                <ul>
+                    {todoList.map((todo, index) => (
+                        <Todo key={index} todo={todo} deleteTodo={deleteTodo}/>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }
