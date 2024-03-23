@@ -37,6 +37,7 @@ const BoxList = (props) => {
                     color={color}
                 />)}
             </div>
+            <hr></hr>
         </div>
     );
 };
