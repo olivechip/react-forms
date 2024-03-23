@@ -6,8 +6,8 @@ import "./BoxList.css"
 const BoxList = (props) => {
     // initial state for list of boxes
     const INITIAL_STATE = [
-        { id: 1, width: 60, height: 60, color: "green" },
-        { id: 2, width: 60, height: 60, color: "red" }
+        { id: 0, width: 60, height: 60, color: "green" },
+        { id: 1, width: 60, height: 60, color: "red" }
     ]
 
     // state for generating new unique IDs
