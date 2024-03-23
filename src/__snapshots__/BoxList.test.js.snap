@@ -21,7 +21,7 @@ exports[`should match snapshot 1`] = `
             name="width"
             placeholder="enter a number"
             type="number"
-            value="0"
+            value=""
           />
         </div>
         <div>
@@ -35,7 +35,7 @@ exports[`should match snapshot 1`] = `
             name="height"
             placeholder="enter a number"
             type="number"
-            value="0"
+            value=""
           />
         </div>
         <div>
@@ -72,6 +72,7 @@ exports[`should match snapshot 1`] = `
         style="background-color: red; width: 60px; height: 60px;"
       />
     </div>
+    <hr />
   </div>
 </DocumentFragment>
 `;

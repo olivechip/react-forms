@@ -24,7 +24,7 @@ exports[`should match snapshot 1`] = `
               name="width"
               placeholder="enter a number"
               type="number"
-              value="0"
+              value=""
             />
           </div>
           <div>
@@ -38,7 +38,7 @@ exports[`should match snapshot 1`] = `
               name="height"
               placeholder="enter a number"
               type="number"
-              value="0"
+              value=""
             />
           </div>
           <div>
@@ -74,6 +74,46 @@ exports[`should match snapshot 1`] = `
           class="Box"
           style="background-color: red; width: 60px; height: 60px;"
         />
+      </div>
+      <hr />
+    </div>
+    <div>
+      <h3>
+        New Todo Form
+      </h3>
+      <form>
+        <label
+          for="todo"
+        />
+        <input
+          id="todo"
+          name="todo"
+          placeholder="enter todo"
+          value=""
+        />
+        <button>
+          Submit
+        </button>
+      </form>
+      <hr />
+      <div>
+        <h3>
+          Todo List
+        </h3>
+        <ul>
+          <li>
+            cut grass
+            <button>
+              X
+            </button>
+          </li>
+          <li>
+            feed dog
+            <button>
+              X
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
