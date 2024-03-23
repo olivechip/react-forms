@@ -1,7 +1,12 @@
-const Box = ({ key, width, height, color }) => {
+import "./Box.css";
+
+const Box = ({ width, height, color }) => {
     return (
-        <div style={{ backgroundColor: color, width: width, height: height }}>
-            {key}
+        <div className="Box" style={{ 
+            backgroundColor: color, 
+            width: width, 
+            height: height,
+        }}>
         </div>
     );
 };
