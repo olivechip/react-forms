@@ -4,7 +4,7 @@ const NewBoxForm = ({ addBox }) => {
     const INITIAL_STATE = {
         width:0,
         height:0,
-        color:""
+        color:"black"
     };
 
     const [ boxInfo, setBoxInfo ] = useState(INITIAL_STATE);
@@ -30,13 +30,40 @@ const NewBoxForm = ({ addBox }) => {
         <div>
             <h3>New Box Form</h3>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="width">Width: </label>
-                <input id="width" type="number" placeholder="enter a number" name="width" value={boxInfo.width} onChange={handleChange}></input>
-                <label htmlFor="height">Length: </label>
-                <input id="height" type="number" placeholder="enter a number" name="height" value={boxInfo.height} onChange={handleChange}></input>
-                <label htmlFor="color">Color: </label>
-                <input id="color" type="color" name="color" value={boxInfo.color} onChange={handleChange}></input>
-                <button>Submit</button>
+                <div>
+                    <label htmlFor="width">Width: </label>
+                    <input 
+                        id="width" 
+                        type="number" 
+                        placeholder="enter a number" 
+                        name="width" value={boxInfo.width} 
+                        onChange={handleChange}>
+                    </input>
+                </div>
+                <div>
+                    <label htmlFor="height">Length: </label>
+                    <input 
+                        id="height" 
+                        type="number" 
+                        placeholder="enter a number" 
+                        name="height" 
+                        value={boxInfo.height} 
+                        onChange={handleChange}>
+                    </input>
+                </div>
+                <div>
+                    <label htmlFor="color">Color: </label>
+                    <input 
+                        id="color" 
+                        type="color" 
+                        name="color" 
+                        value={boxInfo.color} 
+                        onChange={handleChange}>
+                    </input>
+                </div> 
+                <div>             
+                    <button>Submit</button>
+                </div>  
             </form>
         </div>
     )
