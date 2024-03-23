@@ -2,8 +2,8 @@ import { useState } from "react";
 
 const NewBoxForm = ({ addBox }) => {
     const INITIAL_STATE = {
-        width:0,
-        height:0,
+        width:"",
+        height:"",
         color:"black"
     };
 
@@ -36,7 +36,8 @@ const NewBoxForm = ({ addBox }) => {
                         id="width" 
                         type="number" 
                         placeholder="enter a number" 
-                        name="width" value={boxInfo.width} 
+                        name="width" 
+                        value={boxInfo.width} 
                         onChange={handleChange}>
                     </input>
                 </div>

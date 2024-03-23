@@ -6,15 +6,20 @@ const TodoList = () => {
     const INITIAL_STATE = ["cut grass", "feed dog"];
     const [ todoList, setTodoList ] = useState(INITIAL_STATE);
 
+    const addTodo = (todo) => {
+        setTodoList(todoList => [...todoList, todo]);
+    };
+
     const deleteTodo = (itemRemove) => {
         setTodoList(todoList => {
             return todoList.filter(todo => todo !== itemRemove);
-        })
-    }
+        });
+    };
+
     return (
         <div>
             <h3>New Todo Form</h3>
-            <NewTodoForm />
+            <NewTodoForm addTodo={addTodo}/>
             <hr></hr>
             <div>
                 <h3>Todo List</h3>
@@ -25,7 +30,7 @@ const TodoList = () => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default TodoList;
